@@ -1,28 +1,44 @@
-.venv
 
+# Environnements virtuels
+venv/
+.venv/
 env/
 
-
+# Python
 __pycache__/
 *.py[cod]
 *.pyo
 
+# Jupyter
 .ipynb_checkpoints/
 
+# Fichiers systeme
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Variables d'environnement et secrets
 .env
 .env.*
+!.env.example
 
-data/
+# Donnees brutes et preparees
+Data/
+data/raw/
+data/processed/*.npy
+data/processed/*.pkl
 
+# Modeles entraines
 models/*.keras
 models/*.h5
-models/*.hdf5
+models/*.pkl
+*.weights.h5
+best_brainscan.keras
 
+# Logs
 logs/
 *.log
 
-.vscode/
-.idea/
-
-Thumbs.db
-.DS_Store
+# Fichiers temporaires
+*.tmp
+*.bak
