@@ -1,8 +1,10 @@
 tensorflow
-opencv-python
 numpy
+scikit-learn
 matplotlib
 seaborn
-scikit-learn
+pandas
+jupyter
+ipykernel
+opencv-python
 streamlit
-pillow
